@@ -1,0 +1,617 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 84px;
+    background: #007765;
+}
+
+.header__menu {
+    width: 1220px;
+    margin: auto;
+    height: 100%;
+}
+
+.menu__block_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.block_title__title-menu {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-right: 60px;
+}
+
+.block_title__logo {
+    margin-left: 55px;
+}
+
+.block_name_site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/background_PiperNet.jpg) no-repeat;
+    background-size: cover;
+    height: 403px;
+}
+
+.block_name-site__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.block_the_problem {
+    height: 719px;
+    background: #EEEEEE;
+}
+
+.block_the_problem__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+
+    text-align: center;
+    padding: 48px 0px 16px 0px;
+    box-sizing: border-box;
+
+    color: #007765;
+}
+
+.block_the_problem__content-problem {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+
+    width: 1110px;
+    height: 488px;
+    margin: auto;
+}
+
+.content-problem__text1 {
+    margin-bottom: 32px;
+}
+
+.content-problem__text2 {
+    margin-bottom: 32px;
+}
+
+.content-problem__text3 {
+    margin-bottom: 32px;
+}
+
+.content-problem__text4 {
+    margin-bottom: 32px;
+}
+
+.block_text_hero {
+    width: 100%;
+    height: 483px;
+    background: url(img/background_text_hero.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block_text_hero__text-hero {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    width: 893px;
+}
+
+.block_PiedPiperCoin {
+    height: 604px;
+    width: 100%;
+    background: white;
+}
+
+.content_coin__title {
+    padding: 48px 0px 16px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #007765;
+}
+
+.block_PiedPiperCoin__content_coin {
+    width: 1110px;
+    margin: auto;
+}
+
+.content_coin__logo-content {
+    display: flex;
+}
+
+.logo-content__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+    padding-left: 48px;
+}
+
+.content_coin__text1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    padding-top: 35px;
+
+    color: #000000;
+}
+
+.content_coin__text2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    padding-top: 32px;
+
+    color: #000000;
+}
+
+.block_the_team {
+    height: 845px;
+    width: 100%;
+    background: #EEEEEE;
+    padding: 58px 0px 56px 0px;
+}
+
+.block_the_team__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #007765;
+}
+
+.content-the_team__employes {
+    display: flex;
+    width: 1150px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block_the_team_content-the_team {
+    width: 1150px;
+    margin: auto;
+}
+
+.employes__employee {
+    padding-top: 32px;
+    width: 350px;
+    height: 283px;
+    margin: auto;
+}
+
+.employee__img-photo {
+    margin: auto;
+}
+
+.employee__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #007765;
+}
+
+.employee__post {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.block_footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #333333;
+}
+
+.block_footer__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    width: 540px;
+    margin: 20px 0px 20px 0px;
+}
+
+.block_footer__btn_return {
+    width: 260px;
+    height: 60px;
+    background: rgba(255, 178, 35, 0.746);
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+.block_footer__btn_return:hover {
+    background: rgba(204, 136, 9, 0.746);
+}
+
+@media screen and (max-width:1180px) {
+    .header__menu {
+        width: auto;
+    }
+
+    .menu__block_title {
+        width: auto;
+    }
+
+    .block_the_problem {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .block_title__title-menu {
+        margin-right: 30px;
+        font-size: 20px;
+    }
+
+    .block_the_problem__content-problem {
+        width: auto;
+        height: auto;
+    }
+
+    .content-problem__text1 {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .content-problem__text2 {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .content-problem__text3 {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .content-problem__text4 {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .content_coin__title {
+        width: auto;
+    }
+
+    .content_coin__text1 {
+        width: auto;
+        font-size: 25px;
+    }
+
+    .logo-content__text {
+        font-size: 25px;
+    }
+
+    .content_coin__text2 {
+        width: auto;
+        font-size: 25px;
+    }
+
+    .content-the_team__employes {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .block_PiedPiperCoin {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .block_PiedPiperCoin__content_coin {
+        width: auto;
+        height: 100%;
+    }
+
+    .logo-content__logo_coint {
+        padding-left: 20px;
+    }
+
+    .content_coin__text1 {
+        margin-left: 15px;
+    }
+
+    .content_coin__text2 {
+        margin-left: 15px;
+    }
+
+    .block_the_team {
+        height: auto;
+    }
+
+    .block_the_team_content-the_team {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:675px) {
+    .menu__block_title {
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .block_title__logo {
+        margin-left: 0px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .block_title__title-menu {
+        padding: 20px 0px 20px 40px;
+    }
+
+
+    .block_name-site__title {
+        font-size: 36px;
+    }
+
+    .block_the_problem__title {
+        font-size: 36px;
+    }
+
+    .block_the_problem__content-problem {
+        font-size: 16px;
+    }
+
+    .content-problem__text1 {
+        font-size: 16px;
+    }
+
+    .content-problem__text2 {
+        font-size: 16px;
+    }
+
+    .content-problem__text3 {
+        font-size: 16px;
+    }
+
+    .content-problem__text4 {
+        font-size: 16px;
+    }
+
+    .block_text_hero__text-hero {
+        font-size: 25px;
+    }
+
+    .content_coin__title {
+        font-size: 36px;
+    }
+
+    .logo-content__text {
+        font-size: 16px;
+    }
+
+    .content_coin__text1 {
+        font-size: 16px;
+    }
+
+    .content_coin__text2 {
+        font-size: 16px;
+    }
+
+    .block_the_team__title {
+        font-size: 36px;
+    }
+
+    .block_footer__text {
+        width: auto;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .block_title__title-menu {
+        font-size: 13px;
+    }
+
+    .content-problem__text1 {
+        font-size: 13px;
+    }
+
+    .content-problem__text2 {
+        font-size: 13px;
+    }
+
+    .content-problem__text3 {
+        font-size: 13px;
+    }
+
+    .content-problem__text4 {
+        font-size: 13px;
+    }
+
+    .block_text_hero {
+        height: 280px;
+    }
+
+    .block_text_hero__text-hero {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .content_coin__logo-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-content__logo_coint {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .logo-content__text {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0px;
+
+    }
+
+    .content_coin__text1 {
+        font-size: 13px;
+        margin-left: 15px;
+    }
+
+    .content_coin__text2 {
+        font-size: 13px;
+        margin-left: 15px;
+    }
+
+    .block_footer__text {
+        font-size: 13px;
+    }
+}
